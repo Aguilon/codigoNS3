@@ -11,7 +11,6 @@
 using namespace ns3;
 int main (int argc, char *argv[])
 {
- // Parametros da simulação
  bool downlink = true;
  bool uplink = true;
  bool tcp = true;
@@ -25,7 +24,6 @@ int main (int argc, char *argv[])
  cmd.AddValue ("udp", "UDP traffic", voip);
  cmd.Parse (argc, argv);
  
- // Parametros pro tráfego udp
  uint32_t MaxPacketSize = 1024;
  Time interPacketInterval = Seconds (0.0001);
  uint32_t maxPacketCount = 2147483647;
